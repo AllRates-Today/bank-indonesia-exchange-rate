@@ -1,0 +1,53 @@
+{
+  "name": "bank-indonesia-exchange-rate",
+  "version": "1.0.1",
+  "description": "Official Bank Indonesia (Indonesia) daily exchange rates — ~25 currencies vs IDR, history since 2016. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "bi",
+    "bank",
+    "indonesia",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "idr",
+    "central-bank",
+    "official-rates",
+    "indonesia",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/bi/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/bank-indonesia-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/bank-indonesia-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
