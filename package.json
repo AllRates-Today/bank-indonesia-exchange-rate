@@ -1,6 +1,6 @@
 {
   "name": "bank-indonesia-exchange-rate",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Official Bank Indonesia (Indonesia) daily exchange rates — 25 currencies vs IDR, history since 2016. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "bi",
