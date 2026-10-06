@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'IDR', { apiKey: 'art_live_...' });
 {
   bank: 'bi',
   name: 'Bank Indonesia',
-  rate_date: '2026-09-25',   // Bank Indonesia's own publication date
+  rate_date: '2026-10-06',   // Bank Indonesia's own publication date
   source: 'USD',
   target: 'IDR',
-  rate: 17987.49,
+  rate: 18006.58,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -113,10 +113,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bi',
   name: 'Bank Indonesia',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "USD", "quote": "IDR", "type": "sell", "value": 17987.49 },
-    { "base": "USD", "quote": "IDR", "type": "buy", "value": 17808.51 },
+    { "base": "USD", "quote": "IDR", "type": "sell", "value": 18006.58 },
+    { "base": "USD", "quote": "IDR", "type": "buy", "value": 17827.42 },
     // … the rest of the published table (25 currencies vs IDR)
   ],
   disclaimer: '…'
@@ -156,7 +156,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bank-indonesia-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'IDR', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'USD', target: 'IDR', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -169,11 +169,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'IDR',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 17987.49, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 18006.58, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
