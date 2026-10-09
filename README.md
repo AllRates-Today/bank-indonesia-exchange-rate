@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bank-indonesia-exchange-rate.svg)](https://github.com/AllRates-Today/bank-indonesia-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bank-indonesia-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/IDR today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbi%3Fsource%3DUSD%26target%3DIDR&query=%24.rate&label=USD%2FIDR%20published%20by%20Bank%20Indonesia&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bi/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbi%3Fsource%3DUSD%26target%3DIDR&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bi/)
 
 **Official Bank Indonesia (Indonesia) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Bank Indonesia itself prints, every business day.**
 
@@ -32,6 +34,69 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Bank Indonesia table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by Bank Indonesia — 50 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AUD | IDR | buy | 12374.94 |
+| AUD | IDR | sell | 12501.11 |
+| BND | IDR | buy | 13892.57 |
+| BND | IDR | sell | 14033.29 |
+| CAD | IDR | buy | 12492.49 |
+| CAD | IDR | sell | 12621.59 |
+| CHF | IDR | buy | 21364.08 |
+| CHF | IDR | sell | 21581.38 |
+| CNH | IDR | buy | 2655.41 |
+| CNH | IDR | sell | 2682.26 |
+| CNY | IDR | buy | 2655.69 |
+| CNY | IDR | sell | 2682.5 |
+| DKK | IDR | buy | 2666.03 |
+| DKK | IDR | sell | 2693.23 |
+| EUR | IDR | buy | 19925.94 |
+| EUR | IDR | sell | 20127.99 |
+| GBP | IDR | buy | 23494.95 |
+| GBP | IDR | sell | 23740.07 |
+| HKD | IDR | buy | 2268.22 |
+| HKD | IDR | sell | 2291.19 |
+| JPY | IDR | buy | 112.5264 |
+| JPY | IDR | sell | 113.6645 |
+| KRW | IDR | buy | 13.26 |
+| KRW | IDR | sell | 13.4 |
+| KWD | IDR | buy | 57756.49 |
+| KWD | IDR | sell | 58355.89 |
+| LAK | IDR | buy | 0.79 |
+| LAK | IDR | sell | 0.8 |
+| MYR | IDR | buy | 4350.09 |
+| MYR | IDR | sell | 4398.1 |
+| NOK | IDR | buy | 1861.38 |
+| NOK | IDR | sell | 1880.26 |
+| NZD | IDR | buy | 9952.29 |
+| NZD | IDR | sell | 10063.1 |
+| PGK | IDR | buy | 3857.38 |
+| PGK | IDR | sell | 4039.98 |
+| PHP | IDR | buy | 282.85 |
+| PHP | IDR | sell | 286 |
+| SAR | IDR | buy | 4741.38 |
+| SAR | IDR | sell | 4789.28 |
+| SEK | IDR | buy | 1779.06 |
+| SEK | IDR | sell | 1797.05 |
+| SGD | IDR | buy | 13892.57 |
+| SGD | IDR | sell | 14033.29 |
+| THB | IDR | buy | 528.83 |
+| THB | IDR | sell | 534.31 |
+| USD | IDR | buy | 17800.55 |
+| USD | IDR | sell | 17979.45 |
+| VND | IDR | buy | 0.69 |
+| VND | IDR | sell | 0.69 |
+
+Source: [Official rates published by BI, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bi/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
