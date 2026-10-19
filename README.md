@@ -33,69 +33,72 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/bi').then
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest Bank Indonesia table](https://allratestoday.com/api/open/central-bank/bi/table.svg)](https://allratestoday.com/central-bank-rates-api/bi/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by Bank Indonesia — 50 rates. Updated 2026-10-17.
+<details>
+<summary>Table as text: published 2026-10-19 by Bank Indonesia — 50 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | IDR | buy | 12381.13 |
-| AUD | IDR | sell | 12509.17 |
-| BND | IDR | buy | 13922.4 |
-| BND | IDR | sell | 14063.42 |
-| CAD | IDR | buy | 12565.62 |
-| CAD | IDR | sell | 12694.59 |
-| CHF | IDR | buy | 21510.79 |
-| CHF | IDR | sell | 21734.84 |
-| CNH | IDR | buy | 2668.72 |
-| CNH | IDR | sell | 2695.58 |
-| CNY | IDR | buy | 2668.56 |
-| CNY | IDR | sell | 2695.66 |
-| DKK | IDR | buy | 2678.04 |
-| DKK | IDR | sell | 2705.4 |
-| EUR | IDR | buy | 20019.11 |
-| EUR | IDR | sell | 20222.11 |
-| GBP | IDR | buy | 23647.91 |
-| GBP | IDR | sell | 23890.99 |
-| HKD | IDR | buy | 2275.66 |
-| HKD | IDR | sell | 2298.62 |
-| JPY | IDR | buy | 113.1129 |
-| JPY | IDR | sell | 114.2569 |
-| KRW | IDR | buy | 13.3 |
-| KRW | IDR | sell | 13.43 |
-| KWD | IDR | buy | 57943.74 |
-| KWD | IDR | sell | 58545.08 |
+| AUD | IDR | buy | 12499.57 |
+| AUD | IDR | sell | 12628.83 |
+| BND | IDR | buy | 14033.71 |
+| BND | IDR | sell | 14175.86 |
+| CAD | IDR | buy | 12678.58 |
+| CAD | IDR | sell | 12808.71 |
+| CHF | IDR | buy | 21777.09 |
+| CHF | IDR | sell | 22001.29 |
+| CNH | IDR | buy | 2686.31 |
+| CNH | IDR | sell | 2713.35 |
+| CNY | IDR | buy | 2685.95 |
+| CNY | IDR | sell | 2713.27 |
+| DKK | IDR | buy | 2700.4 |
+| DKK | IDR | sell | 2727.95 |
+| EUR | IDR | buy | 20185.4 |
+| EUR | IDR | sell | 20391.9 |
+| GBP | IDR | buy | 23907.08 |
+| GBP | IDR | sell | 24152.79 |
+| HKD | IDR | buy | 2288.73 |
+| HKD | IDR | sell | 2311.88 |
+| JPY | IDR | buy | 113.6675 |
+| JPY | IDR | sell | 114.8244 |
+| KRW | IDR | buy | 13.47 |
+| KRW | IDR | sell | 13.61 |
+| KWD | IDR | buy | 58279.49 |
+| KWD | IDR | sell | 58884.32 |
 | LAK | IDR | buy | 0.79 |
 | LAK | IDR | sell | 0.81 |
-| MYR | IDR | buy | 4374.88 |
-| MYR | IDR | sell | 4423.18 |
-| NOK | IDR | buy | 1875.57 |
-| NOK | IDR | sell | 1894.56 |
-| NZD | IDR | buy | 10016.7 |
-| NZD | IDR | sell | 10122.78 |
-| PGK | IDR | buy | 3864.53 |
-| PGK | IDR | sell | 4047.67 |
-| PHP | IDR | buy | 283.14 |
-| PHP | IDR | sell | 286.28 |
-| SAR | IDR | buy | 4757.26 |
-| SAR | IDR | sell | 4805.58 |
-| SEK | IDR | buy | 1789.84 |
-| SEK | IDR | sell | 1808.02 |
-| SGD | IDR | buy | 13922.4 |
-| SGD | IDR | sell | 14063.42 |
-| THB | IDR | buy | 532.61 |
-| THB | IDR | sell | 538.6 |
-| USD | IDR | buy | 17858.26 |
-| USD | IDR | sell | 18037.74 |
+| MYR | IDR | buy | 4398.08 |
+| MYR | IDR | sell | 4447.72 |
+| NOK | IDR | buy | 1899.99 |
+| NOK | IDR | sell | 1921.52 |
+| NZD | IDR | buy | 10173.53 |
+| NZD | IDR | sell | 10281.22 |
+| PGK | IDR | buy | 3885.12 |
+| PGK | IDR | sell | 4069.31 |
+| PHP | IDR | buy | 284.99 |
+| PHP | IDR | sell | 288.28 |
+| SAR | IDR | buy | 4786.22 |
+| SAR | IDR | sell | 4834.58 |
+| SEK | IDR | buy | 1811.59 |
+| SEK | IDR | sell | 1831.28 |
+| SGD | IDR | buy | 14033.71 |
+| SGD | IDR | sell | 14175.86 |
+| THB | IDR | buy | 537.45 |
+| THB | IDR | sell | 543.34 |
+| USD | IDR | buy | 17961.74 |
+| USD | IDR | sell | 18142.26 |
 | VND | IDR | buy | 0.69 |
 | VND | IDR | sell | 0.7 |
+
+</details>
 
 Source: [Official rates published by BI, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bi/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -369,7 +372,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/bank-indonesia-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/bank-indonesia-exchange-rate)
 
 ## 📜 License
