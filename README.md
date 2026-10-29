@@ -47,58 +47,58 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Bank Indonesia — 50 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Bank Indonesia — 50 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | IDR | buy | 12660.89 |
-| AUD | IDR | sell | 12795.42 |
-| BND | IDR | buy | 14081.54 |
-| BND | IDR | sell | 14225.28 |
-| CAD | IDR | buy | 12869.59 |
-| CAD | IDR | sell | 13001.7 |
-| CHF | IDR | buy | 21800.11 |
-| CHF | IDR | sell | 22024.51 |
-| CNH | IDR | buy | 2706.58 |
-| CNH | IDR | sell | 2733.95 |
-| CNY | IDR | buy | 2706.42 |
-| CNY | IDR | sell | 2733.91 |
-| DKK | IDR | buy | 2694.5 |
-| DKK | IDR | sell | 2722.27 |
-| EUR | IDR | buy | 20141.91 |
-| EUR | IDR | sell | 20346.16 |
-| GBP | IDR | buy | 24045.76 |
-| GBP | IDR | sell | 24292.88 |
-| HKD | IDR | buy | 2300.73 |
-| HKD | IDR | sell | 2324.03 |
-| JPY | IDR | buy | 114.3239 |
-| JPY | IDR | sell | 115.4874 |
-| KRW | IDR | buy | 13.6 |
-| KRW | IDR | sell | 13.75 |
-| KWD | IDR | buy | 58560.38 |
-| KWD | IDR | sell | 59168.09 |
+| AUD | IDR | buy | 12727.78 |
+| AUD | IDR | sell | 12857.53 |
+| BND | IDR | buy | 14111.29 |
+| BND | IDR | sell | 14254.23 |
+| CAD | IDR | buy | 12868.68 |
+| CAD | IDR | sell | 12999.87 |
+| CHF | IDR | buy | 21795.06 |
+| CHF | IDR | sell | 22019.42 |
+| CNH | IDR | buy | 2714.16 |
+| CNH | IDR | sell | 2741.69 |
+| CNY | IDR | buy | 2713.55 |
+| CNY | IDR | sell | 2741.12 |
+| DKK | IDR | buy | 2692.11 |
+| DKK | IDR | sell | 2719.25 |
+| EUR | IDR | buy | 20122.01 |
+| EUR | IDR | sell | 20326.08 |
+| GBP | IDR | buy | 24042.57 |
+| GBP | IDR | sell | 24286.04 |
+| HKD | IDR | buy | 2306.1 |
+| HKD | IDR | sell | 2329.52 |
+| JPY | IDR | buy | 114.6592 |
+| JPY | IDR | sell | 115.819 |
+| KRW | IDR | buy | 13.52 |
+| KRW | IDR | sell | 13.66 |
+| KWD | IDR | buy | 58664.33 |
+| KWD | IDR | sell | 59273.18 |
 | LAK | IDR | buy | 0.8 |
-| LAK | IDR | sell | 0.81 |
-| MYR | IDR | buy | 4413.87 |
-| MYR | IDR | sell | 4462.59 |
-| NOK | IDR | buy | 1938.36 |
-| NOK | IDR | sell | 1957.97 |
-| NZD | IDR | buy | 10267.68 |
-| NZD | IDR | sell | 10372.69 |
-| PGK | IDR | buy | 3878.58 |
-| PGK | IDR | sell | 4227.47 |
-| PHP | IDR | buy | 280.88 |
-| PHP | IDR | sell | 284.08 |
-| SAR | IDR | buy | 4808.78 |
-| SAR | IDR | sell | 4857.62 |
-| SEK | IDR | buy | 1812.46 |
-| SEK | IDR | sell | 1830.82 |
-| SGD | IDR | buy | 14082.64 |
-| SGD | IDR | sell | 14225.28 |
-| THB | IDR | buy | 534.45 |
-| THB | IDR | sell | 539.98 |
-| USD | IDR | buy | 18048.31 |
-| USD | IDR | sell | 18229.69 |
+| LAK | IDR | sell | 0.82 |
+| MYR | IDR | buy | 4433.25 |
+| MYR | IDR | sell | 4483.3 |
+| NOK | IDR | buy | 1938.9 |
+| NOK | IDR | sell | 1958.54 |
+| NZD | IDR | buy | 10151.47 |
+| NZD | IDR | sell | 10257.15 |
+| PGK | IDR | buy | 3887.99 |
+| PGK | IDR | sell | 4237.72 |
+| PHP | IDR | buy | 282.38 |
+| PHP | IDR | sell | 285.57 |
+| SAR | IDR | buy | 4821.08 |
+| SAR | IDR | sell | 4869.8 |
+| SEK | IDR | buy | 1817.19 |
+| SEK | IDR | sell | 1836.93 |
+| SGD | IDR | buy | 14107.99 |
+| SGD | IDR | sell | 14257.56 |
+| THB | IDR | buy | 535.27 |
+| THB | IDR | sell | 541.13 |
+| USD | IDR | buy | 18092.08 |
+| USD | IDR | sell | 18273.92 |
 | VND | IDR | buy | 0.7 |
 | VND | IDR | sell | 0.71 |
 
@@ -266,6 +266,7 @@ Bank Indonesia is the central bank of the Republic of Indonesia. It publishes tr
 
 - Publisher's own page: [BI transaction rates](https://www.bi.go.id/en/statistik/informasi-kurs/transaksi-bi/default.aspx) · [www.bi.go.id](https://www.bi.go.id)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Bank Indonesia rates page](https://allratestoday.com/central-bank-rates-api/bi/)
+- In the API: usually by **04:15 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
